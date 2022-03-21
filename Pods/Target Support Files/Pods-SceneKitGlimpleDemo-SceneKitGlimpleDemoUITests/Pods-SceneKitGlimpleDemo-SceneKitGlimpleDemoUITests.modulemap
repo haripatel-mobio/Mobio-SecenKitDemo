@@ -1,0 +1,6 @@
+framework module Pods_SceneKitGlimpleDemo_SceneKitGlimpleDemoUITests {
+  umbrella header "Pods-SceneKitGlimpleDemo-SceneKitGlimpleDemoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

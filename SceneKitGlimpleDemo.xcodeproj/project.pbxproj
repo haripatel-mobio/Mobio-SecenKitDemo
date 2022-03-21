@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22A77BC854D69C0CA22EDBD3 /* Pods_SceneKitGlimpleDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9BD9F88E1EFD605A9826553 /* Pods_SceneKitGlimpleDemo.framework */; };
+		AE593B33717C24B8FAC7E325 /* Pods_SceneKitGlimpleDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD720401135DE68758537C20 /* Pods_SceneKitGlimpleDemoTests.framework */; };
+		C2DD3C7CDA0B13B83498B004 /* Pods_SceneKitGlimpleDemo_SceneKitGlimpleDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF2740C97288A405D3B5491 /* Pods_SceneKitGlimpleDemo_SceneKitGlimpleDemoUITests.framework */; };
+		DE175F2C27B8D2180045FE50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE175F2B27B8D2180045FE50 /* AppDelegate.swift */; };
+		DE175F2E27B8D2180045FE50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE175F2D27B8D2180045FE50 /* SceneDelegate.swift */; };
+		DE175F3027B8D2180045FE50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE175F2F27B8D2180045FE50 /* ViewController.swift */; };
+		DE175F3327B8D2180045FE50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE175F3127B8D2180045FE50 /* Main.storyboard */; };
+		DE175F3527B8D2200045FE50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE175F3427B8D2200045FE50 /* Assets.xcassets */; };
+		DE175F3827B8D2200045FE50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE175F3627B8D2200045FE50 /* LaunchScreen.storyboard */; };
+		DE175F4327B8D2200045FE50 /* SceneKitGlimpleDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE175F4227B8D2200045FE50 /* SceneKitGlimpleDemoTests.swift */; };
+		DE175F4E27B8D2200045FE50 /* SceneKitGlimpleDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE175F4D27B8D2200045FE50 /* SceneKitGlimpleDemoUITests.swift */; };
+		DE175F5C27B8D6120045FE50 /* GlimpleScene.scn in Resources */ = {isa = PBXBuildFile; fileRef = DE175F5B27B8D6120045FE50 /* GlimpleScene.scn */; };
+		DE36D83527BB8AC40042CA83 /* DGCurvedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DE36D83327BB8AC40042CA83 /* DGCurvedLabel.m */; };
+		DE36D83927BBA41F0042CA83 /* GPCoinGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE36D83827BBA41F0042CA83 /* GPCoinGeometry.swift */; };
+		DE36D83B27BBBEE40042CA83 /* GPGlimpleCameraNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE36D83A27BBBEE40042CA83 /* GPGlimpleCameraNode.swift */; };
+		DE36D83D27BBC4AA0042CA83 /* SCNNode+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE36D83C27BBC4AA0042CA83 /* SCNNode+Extension.swift */; };
+		DE94F40E27BA0C5200580DCF /* GlimpleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE94F40D27BA0C5200580DCF /* GlimpleNode.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE175F3F27B8D2200045FE50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE175F2027B8D2180045FE50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE175F2727B8D2180045FE50;
+			remoteInfo = SceneKitGlimpleDemo;
+		};
+		DE175F4A27B8D2200045FE50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE175F2027B8D2180045FE50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE175F2727B8D2180045FE50;
+			remoteInfo = SceneKitGlimpleDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6BBF114D8F77D513BF9FB629 /* Pods-SceneKitGlimpleDemo-SceneKitGlimpleDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SceneKitGlimpleDemo-SceneKitGlimpleDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-SceneKitGlimpleDemo-SceneKitGlimpleDemoUITests/Pods-SceneKitGlimpleDemo-SceneKitGlimpleDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8CCFB3AF3D2032D3F1A11C6C /* Pods-SceneKitGlimpleDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SceneKitGlimpleDemo.release.xcconfig"; path = "Target Support Files/Pods-SceneKitGlimpleDemo/Pods-SceneKitGlimpleDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8ECD684DA3C84BEF61323AE3 /* Pods-SceneKitGlimpleDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SceneKitGlimpleDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-SceneKitGlimpleDemoTests/Pods-SceneKitGlimpleDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CAF2740C97288A405D3B5491 /* Pods_SceneKitGlimpleDemo_SceneKitGlimpleDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SceneKitGlimpleDemo_SceneKitGlimpleDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD720401135DE68758537C20 /* Pods_SceneKitGlimpleDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SceneKitGlimpleDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D633E439328A1BD1483E947B /* Pods-SceneKitGlimpleDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SceneKitGlimpleDemo.debug.xcconfig"; path = "Target Support Files/Pods-SceneKitGlimpleDemo/Pods-SceneKitGlimpleDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		D9BD9F88E1EFD605A9826553 /* Pods_SceneKitGlimpleDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SceneKitGlimpleDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE175F2827B8D2180045FE50 /* SceneKitGlimpleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SceneKitGlimpleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE175F2B27B8D2180045FE50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE175F2D27B8D2180045FE50 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DE175F2F27B8D2180045FE50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE175F3227B8D2180045FE50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE175F3427B8D2200045FE50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE175F3727B8D2200045FE50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE175F3927B8D2200045FE50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE175F3E27B8D2200045FE50 /* SceneKitGlimpleDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SceneKitGlimpleDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE175F4227B8D2200045FE50 /* SceneKitGlimpleDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneKitGlimpleDemoTests.swift; sourceTree = "<group>"; };
+		DE175F4427B8D2200045FE50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE175F4927B8D2200045FE50 /* SceneKitGlimpleDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SceneKitGlimpleDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE175F4D27B8D2200045FE50 /* SceneKitGlimpleDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneKitGlimpleDemoUITests.swift; sourceTree = "<group>"; };
+		DE175F4F27B8D2200045FE50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE175F5B27B8D6120045FE50 /* GlimpleScene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = GlimpleScene.scn; sourceTree = "<group>"; };
+		DE36D83327BB8AC40042CA83 /* DGCurvedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGCurvedLabel.m; sourceTree = "<group>"; };
+		DE36D83427BB8AC40042CA83 /* DGCurvedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGCurvedLabel.h; sourceTree = "<group>"; };
+		DE36D83627BB8AD70042CA83 /* SceneKitGlimpleDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SceneKitGlimpleDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		DE36D83827BBA41F0042CA83 /* GPCoinGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPCoinGeometry.swift; sourceTree = "<group>"; };
+		DE36D83A27BBBEE40042CA83 /* GPGlimpleCameraNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPGlimpleCameraNode.swift; sourceTree = "<group>"; };
+		DE36D83C27BBC4AA0042CA83 /* SCNNode+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNNode+Extension.swift"; sourceTree = "<group>"; };
+		DE94F40D27BA0C5200580DCF /* GlimpleNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlimpleNode.swift; sourceTree = "<group>"; };
+		E5865A12B8B743BB99ED9701 /* Pods-SceneKitGlimpleDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SceneKitGlimpleDemoTests.release.xcconfig"; path = "Target Support Files/Pods-SceneKitGlimpleDemoTests/Pods-SceneKitGlimpleDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		FDAA96535A50C60EF80BD7C9 /* Pods-SceneKitGlimpleDemo-SceneKitGlimpleDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SceneKitGlimpleDemo-SceneKitGlimpleDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-SceneKitGlimpleDemo-SceneKitGlimpleDemoUITests/Pods-SceneKitGlimpleDemo-SceneKitGlimpleDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE175F2527B8D2180045FE50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A77BC854D69C0CA22EDBD3 /* Pods_SceneKitGlimpleDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE175F3B27B8D2200045FE50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE593B33717C24B8FAC7E325 /* Pods_SceneKitGlimpleDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE175F4627B8D2200045FE50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2DD3C7CDA0B13B83498B004 /* Pods_SceneKitGlimpleDemo_SceneKitGlimpleDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B8F91DDA32D1F971D618CAC2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D633E439328A1BD1483E947B /* Pods-SceneKitGlimpleDemo.debug.xcconfig */,
+				8CCFB3AF3D2032D3F1A11C6C /* Pods-SceneKitGlimpleDemo.release.xcconfig */,
+				FDAA96535A50C60EF80BD7C9 /* Pods-SceneKitGlimpleDemo-SceneKitGlimpleDemoUITests.debug.xcconfig */,
+				6BBF114D8F77D513BF9FB629 /* Pods-SceneKitGlimpleDemo-SceneKitGlimpleDemoUITests.release.xcconfig */,
+				8ECD684DA3C84BEF61323AE3 /* Pods-SceneKitGlimpleDemoTests.debug.xcconfig */,
+				E5865A12B8B743BB99ED9701 /* Pods-SceneKitGlimpleDemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D58A255AB45241D97668C4A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9BD9F88E1EFD605A9826553 /* Pods_SceneKitGlimpleDemo.framework */,
+				CAF2740C97288A405D3B5491 /* Pods_SceneKitGlimpleDemo_SceneKitGlimpleDemoUITests.framework */,
+				CD720401135DE68758537C20 /* Pods_SceneKitGlimpleDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE175F1F27B8D2180045FE50 = {
+			isa = PBXGroup;
+			children = (
+				DE175F2A27B8D2180045FE50 /* SceneKitGlimpleDemo */,
+				DE175F4127B8D2200045FE50 /* SceneKitGlimpleDemoTests */,
+				DE175F4C27B8D2200045FE50 /* SceneKitGlimpleDemoUITests */,
+				DE175F2927B8D2180045FE50 /* Products */,
+				B8F91DDA32D1F971D618CAC2 /* Pods */,
+				D58A255AB45241D97668C4A0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DE175F2927B8D2180045FE50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE175F2827B8D2180045FE50 /* SceneKitGlimpleDemo.app */,
+				DE175F3E27B8D2200045FE50 /* SceneKitGlimpleDemoTests.xctest */,
+				DE175F4927B8D2200045FE50 /* SceneKitGlimpleDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE175F2A27B8D2180045FE50 /* SceneKitGlimpleDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DE175F2B27B8D2180045FE50 /* AppDelegate.swift */,
+				DE175F2D27B8D2180045FE50 /* SceneDelegate.swift */,
+				DE175F2F27B8D2180045FE50 /* ViewController.swift */,
+				DE175F3127B8D2180045FE50 /* Main.storyboard */,
+				DE175F3427B8D2200045FE50 /* Assets.xcassets */,
+				DE175F3627B8D2200045FE50 /* LaunchScreen.storyboard */,
+				DE175F3927B8D2200045FE50 /* Info.plist */,
+				DE36D83727BB8B150042CA83 /* DGCurvedLabel */,
+				DE175F5B27B8D6120045FE50 /* GlimpleScene.scn */,
+				DE94F40D27BA0C5200580DCF /* GlimpleNode.swift */,
+				DE36D83627BB8AD70042CA83 /* SceneKitGlimpleDemo-Bridging-Header.h */,
+				DE36D83827BBA41F0042CA83 /* GPCoinGeometry.swift */,
+				DE36D83A27BBBEE40042CA83 /* GPGlimpleCameraNode.swift */,
+				DE36D83C27BBC4AA0042CA83 /* SCNNode+Extension.swift */,
+			);
+			path = SceneKitGlimpleDemo;
+			sourceTree = "<group>";
+		};
+		DE175F4127B8D2200045FE50 /* SceneKitGlimpleDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE175F4227B8D2200045FE50 /* SceneKitGlimpleDemoTests.swift */,
+				DE175F4427B8D2200045FE50 /* Info.plist */,
+			);
+			path = SceneKitGlimpleDemoTests;
+			sourceTree = "<group>";
+		};
+		DE175F4C27B8D2200045FE50 /* SceneKitGlimpleDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DE175F4D27B8D2200045FE50 /* SceneKitGlimpleDemoUITests.swift */,
+				DE175F4F27B8D2200045FE50 /* Info.plist */,
+			);
+			path = SceneKitGlimpleDemoUITests;
+			sourceTree = "<group>";
+		};
+		DE36D83727BB8B150042CA83 /* DGCurvedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				DE36D83427BB8AC40042CA83 /* DGCurvedLabel.h */,
+				DE36D83327BB8AC40042CA83 /* DGCurvedLabel.m */,
+			);
+			path = DGCurvedLabel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE175F2727B8D2180045FE50 /* SceneKitGlimpleDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE175F5227B8D2200045FE50 /* Build configuration list for PBXNativeTarget "SceneKitGlimpleDemo" */;
+			buildPhases = (
+				B8353EA27ADFCC3A4DB537DD /* [CP] Check Pods Manifest.lock */,
+				DE175F2427B8D2180045FE50 /* Sources */,
+				DE175F2527B8D2180045FE50 /* Frameworks */,
+				DE175F2627B8D2180045FE50 /* Resources */,
+				E2CD4227843B1759461750D9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SceneKitGlimpleDemo;
+			productName = SceneKitGlimpleDemo;
+			productReference = DE175F2827B8D2180045FE50 /* SceneKitGlimpleDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DE175F3D27B8D2200045FE50 /* SceneKitGlimpleDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE175F5527B8D2200045FE50 /* Build configuration list for PBXNativeTarget "SceneKitGlimpleDemoTests" */;
+			buildPhases = (
+				3AA398F1CF3A3A74440504F4 /* [CP] Check Pods Manifest.lock */,
+				DE175F3A27B8D2200045FE50 /* Sources */,
+				DE175F3B27B8D2200045FE50 /* Frameworks */,
+				DE175F3C27B8D2200045FE50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE175F4027B8D2200045FE50 /* PBXTargetDependency */,
+			);
+			name = SceneKitGlimpleDemoTests;
+			productName = SceneKitGlimpleDemoTests;
+			productReference = DE175F3E27B8D2200045FE50 /* SceneKitGlimpleDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DE175F4827B8D2200045FE50 /* SceneKitGlimpleDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE175F5827B8D2200045FE50 /* Build configuration list for PBXNativeTarget "SceneKitGlimpleDemoUITests" */;
+			buildPhases = (
+				CCCE8A8D23F0D90CA9718341 /* [CP] Check Pods Manifest.lock */,
+				DE175F4527B8D2200045FE50 /* Sources */,
+				DE175F4627B8D2200045FE50 /* Frameworks */,
+				DE175F4727B8D2200045FE50 /* Resources */,
+				B4F999EED0862551556EB3D0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE175F4B27B8D2200045FE50 /* PBXTargetDependency */,
+			);
+			name = SceneKitGlimpleDemoUITests;
+			productName = SceneKitGlimpleDemoUITests;
+			productReference = DE175F4927B8D2200045FE50 /* SceneKitGlimpleDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE175F2027B8D2180045FE50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					DE175F2727B8D2180045FE50 = {
+						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
+					};
+					DE175F3D27B8D2200045FE50 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = DE175F2727B8D2180045FE50;
+					};
+					DE175F4827B8D2200045FE50 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = DE175F2727B8D2180045FE50;
+					};
+				};
+			};
+			buildConfigurationList = DE175F2327B8D2180045FE50 /* Build configuration list for PBXProject "SceneKitGlimpleDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE175F1F27B8D2180045FE50;
+			productRefGroup = DE175F2927B8D2180045FE50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE175F2727B8D2180045FE50 /* SceneKitGlimpleDemo */,
+				DE175F3D27B8D2200045FE50 /* SceneKitGlimpleDemoTests */,
+				DE175F4827B8D2200045FE50 /* SceneKitGlimpleDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE175F2627B8D2180045FE50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE175F3827B8D2200045FE50 /* LaunchScreen.storyboard in Resources */,
+				DE175F3527B8D2200045FE50 /* Assets.xcassets in Resources */,
+				DE175F5C27B8D6120045FE50 /* GlimpleScene.scn in Resources */,
+				DE175F3327B8D2180045FE50 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE175F3C27B8D2200045FE50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE175F4727B8D2200045FE50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3AA398F1CF3A3A74440504F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SceneKitGlimpleDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4F999EED0862551556EB3D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SceneKitGlimpleDemo-SceneKitGlimpleDemoUITests/Pods-SceneKitGlimpleDemo-SceneKitGlimpleDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SceneKitGlimpleDemo-SceneKitGlimpleDemoUITests/Pods-SceneKitGlimpleDemo-SceneKitGlimpleDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SceneKitGlimpleDemo-SceneKitGlimpleDemoUITests/Pods-SceneKitGlimpleDemo-SceneKitGlimpleDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8353EA27ADFCC3A4DB537DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SceneKitGlimpleDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCCE8A8D23F0D90CA9718341 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SceneKitGlimpleDemo-SceneKitGlimpleDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2CD4227843B1759461750D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SceneKitGlimpleDemo/Pods-SceneKitGlimpleDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SceneKitGlimpleDemo/Pods-SceneKitGlimpleDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SceneKitGlimpleDemo/Pods-SceneKitGlimpleDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE175F2427B8D2180045FE50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE94F40E27BA0C5200580DCF /* GlimpleNode.swift in Sources */,
+				DE36D83527BB8AC40042CA83 /* DGCurvedLabel.m in Sources */,
+				DE175F3027B8D2180045FE50 /* ViewController.swift in Sources */,
+				DE36D83927BBA41F0042CA83 /* GPCoinGeometry.swift in Sources */,
+				DE36D83D27BBC4AA0042CA83 /* SCNNode+Extension.swift in Sources */,
+				DE175F2C27B8D2180045FE50 /* AppDelegate.swift in Sources */,
+				DE36D83B27BBBEE40042CA83 /* GPGlimpleCameraNode.swift in Sources */,
+				DE175F2E27B8D2180045FE50 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE175F3A27B8D2200045FE50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE175F4327B8D2200045FE50 /* SceneKitGlimpleDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE175F4527B8D2200045FE50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE175F4E27B8D2200045FE50 /* SceneKitGlimpleDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE175F4027B8D2200045FE50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE175F2727B8D2180045FE50 /* SceneKitGlimpleDemo */;
+			targetProxy = DE175F3F27B8D2200045FE50 /* PBXContainerItemProxy */;
+		};
+		DE175F4B27B8D2200045FE50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE175F2727B8D2180045FE50 /* SceneKitGlimpleDemo */;
+			targetProxy = DE175F4A27B8D2200045FE50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DE175F3127B8D2180045FE50 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE175F3227B8D2180045FE50 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE175F3627B8D2200045FE50 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE175F3727B8D2200045FE50 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE175F5027B8D2200045FE50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE175F5127B8D2200045FE50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE175F5327B8D2200045FE50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D633E439328A1BD1483E947B /* Pods-SceneKitGlimpleDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3B4PXP647T;
+				INFOPLIST_FILE = SceneKitGlimpleDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobio.SceneKitGlimpleDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SceneKitGlimpleDemo/SceneKitGlimpleDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE175F5427B8D2200045FE50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CCFB3AF3D2032D3F1A11C6C /* Pods-SceneKitGlimpleDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3B4PXP647T;
+				INFOPLIST_FILE = SceneKitGlimpleDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobio.SceneKitGlimpleDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SceneKitGlimpleDemo/SceneKitGlimpleDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DE175F5627B8D2200045FE50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ECD684DA3C84BEF61323AE3 /* Pods-SceneKitGlimpleDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3B4PXP647T;
+				INFOPLIST_FILE = SceneKitGlimpleDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobio.SceneKitGlimpleDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SceneKitGlimpleDemo.app/SceneKitGlimpleDemo";
+			};
+			name = Debug;
+		};
+		DE175F5727B8D2200045FE50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5865A12B8B743BB99ED9701 /* Pods-SceneKitGlimpleDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3B4PXP647T;
+				INFOPLIST_FILE = SceneKitGlimpleDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobio.SceneKitGlimpleDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SceneKitGlimpleDemo.app/SceneKitGlimpleDemo";
+			};
+			name = Release;
+		};
+		DE175F5927B8D2200045FE50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDAA96535A50C60EF80BD7C9 /* Pods-SceneKitGlimpleDemo-SceneKitGlimpleDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3B4PXP647T;
+				INFOPLIST_FILE = SceneKitGlimpleDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobio.SceneKitGlimpleDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SceneKitGlimpleDemo;
+			};
+			name = Debug;
+		};
+		DE175F5A27B8D2200045FE50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BBF114D8F77D513BF9FB629 /* Pods-SceneKitGlimpleDemo-SceneKitGlimpleDemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3B4PXP647T;
+				INFOPLIST_FILE = SceneKitGlimpleDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobio.SceneKitGlimpleDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SceneKitGlimpleDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE175F2327B8D2180045FE50 /* Build configuration list for PBXProject "SceneKitGlimpleDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE175F5027B8D2200045FE50 /* Debug */,
+				DE175F5127B8D2200045FE50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE175F5227B8D2200045FE50 /* Build configuration list for PBXNativeTarget "SceneKitGlimpleDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE175F5327B8D2200045FE50 /* Debug */,
+				DE175F5427B8D2200045FE50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE175F5527B8D2200045FE50 /* Build configuration list for PBXNativeTarget "SceneKitGlimpleDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE175F5627B8D2200045FE50 /* Debug */,
+				DE175F5727B8D2200045FE50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE175F5827B8D2200045FE50 /* Build configuration list for PBXNativeTarget "SceneKitGlimpleDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE175F5927B8D2200045FE50 /* Debug */,
+				DE175F5A27B8D2200045FE50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE175F2027B8D2180045FE50 /* Project object */;
+}
